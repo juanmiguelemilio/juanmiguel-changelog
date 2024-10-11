@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.changelog-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 29%;
+  top: 0;
+  bottom: -30px;
+  width: 2px;
+  background-color: black;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  left: 28%;
+  top: 0;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+  width: 200px;
+  text-align: right;
+  padding-right: 80px;
+}
+
+.event {
+  font-size: 16px;
+  color: #333;
+}
+
+.changelog-btn {
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
